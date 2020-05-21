@@ -11,14 +11,19 @@
 
 <style>
     nav {
-        width: 100%;
         display:flex;
         justify-content:space-between;
         align-items: center;
+        position: fixed;
+        width: 100%;
+        top:0;
     }
     h1{
         font-size: 1rem;
-        margin:0;
+        letter-spacing: 0.2rem;
+        margin: 0.5rem;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 2px solid #24d6ee;
     }
     h1:hover {
         cursor: pointer;
@@ -26,7 +31,7 @@
     ul {
         display: flex;
         margin: 0;
-        padding: 0;
+        padding: 0.5rem;
     }
     li {
         list-style-type: none;
@@ -34,19 +39,22 @@
     button{
       background: none;  
       border: none;
+      padding: 0 0 0.5rem 0;
+      margin: 0.5rem 0.5rem 0 0.5rem;
       border-radius: 0;
+      letter-spacing: 0.01rem;
     }
     button:hover {
         cursor: pointer;
         color: #24d6ee;
     }
     .active{
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid #24d6ee;
     }
 </style>
 
 <nav>
-    <h1 on:click={() => setPage("Landing")}>Conor Beamish</h1>
+    <h1 on:click={() => setPage("Landing")}>CB</h1>
     <ul>
         {#each navItems as item}
             <li>
