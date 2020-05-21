@@ -5,7 +5,7 @@
 	import Skills from "./Skills.svelte";
 	import Projects from "./Projects.svelte";
 	import Contact from "./Contact.svelte";
-	let page = "About";
+	let page = "Skills";
 
 	export function setPage(newPage){
 		console.log(newPage)
