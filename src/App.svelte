@@ -5,7 +5,8 @@
 	import Skills from "./Skills.svelte";
 	import Projects from "./Projects.svelte";
 	import Contact from "./Contact.svelte";
-	let page = "Skills";
+	import Footer from "./Footer.svelte";
+	let page = "Landing";
 
 	export function setPage(newPage){
 		console.log(newPage)
@@ -24,3 +25,4 @@
 {:else if page === "Contact"}
 	<Contact />
 {/if}
+<Footer/>

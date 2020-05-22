@@ -4,7 +4,7 @@
 
 <style>
     section{
-        height: 100%;
+        min-height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -21,6 +21,7 @@
     .text{
         font-weight: 200;
     }
+   
 </style>
 
 <section out:fly="{{y:200, duration:1000}}">
@@ -29,4 +30,5 @@
         <h3 in:fade={{delay: 1500, duration: 1000}}>Conor Beamish</h3>
         <div in:fade={{delay: 2000, duration: 1000}} class="text">A Web Developer based in Cardiff, Wales</div>
     </div>
+ 
 </section>
