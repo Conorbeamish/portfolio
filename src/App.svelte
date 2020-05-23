@@ -25,4 +25,4 @@
 {:else if page === "Contact"}
 	<Contact />
 {/if}
-<Footer/>
+<!-- <Footer/> -->

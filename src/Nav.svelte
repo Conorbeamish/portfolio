@@ -17,9 +17,11 @@
         position: fixed;
         width: 100%;
         top:0;
+        backdrop-filter: blur(1px);
     }
+
     h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
         letter-spacing: 0.2rem;
         margin: 0.5rem;
         font-family: 'Open Sans', sans-serif;
@@ -43,6 +45,7 @@
       margin: 0.5rem 0.5rem 0 0.5rem;
       border-radius: 0;
       letter-spacing: 0.01rem;
+      border-bottom: 2px solid transparent;
     }
     button:hover {
         cursor: pointer;

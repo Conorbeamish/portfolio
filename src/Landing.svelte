@@ -4,7 +4,7 @@
 
 <style>
     section{
-        min-height: 80vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -20,6 +20,10 @@
     }
     .text{
         font-weight: 200;
+    }
+    h3 {
+        border-bottom: 4px solid #24d6ee; 
+        margin-right: auto;
     }
    
 </style>

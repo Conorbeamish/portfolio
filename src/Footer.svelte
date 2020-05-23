@@ -1,9 +1,11 @@
 <style>
     footer{
         min-height: 20vh;
+        position: absolute;
+        bottom: 0;
     }
     svg{
-       
+     
     }
 </style> 
 

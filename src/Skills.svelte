@@ -17,15 +17,16 @@
 
 <style>
     section {
-        height: 100%;
+        margin-top: 10vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
         width: 80%;
+        min-height: 70vh;
         margin-left: auto;
         margin-right: auto;
     }
     .skill-list{
+
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -36,17 +37,19 @@
     }
     p{
         font-size: 1.25rem;
+        margin-top: 0;
     }
     h4{
         text-align: center;
         margin-bottom: .5rem;
+        font-size: 1.25rem;
     }
 </style>
 
-<section in:fade={{delay:1000, duration: 1000}} out:fly="{{y:200, duration:1000}}">
-    <h3>Skills</h3>
-    <p>I have...</p>
-    <div class="skill-list">
+<section  out:fly="{{y:200, duration:1000}}">
+    <h3 in:fly={{y:200, delay:1000, duration: 2000}}>Skills</h3>
+    <p in:fly={{y:200, delay:1500, duration: 2000}}>I am a self taught developer and have experience using technologies including...</p>
+    <div in:fly={{y:200, delay:2000, duration: 2000}} class="skill-list">
         {#each skills as skill}
         <div class="skill">
             <h4>{skill.name}</h4>
