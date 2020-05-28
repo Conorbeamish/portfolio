@@ -17,7 +17,7 @@
 
 <style>
     section {
-        margin-top: 10vh;
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         width: 80%;
@@ -48,7 +48,9 @@
 
 <section  out:fly="{{y:200, duration:1000}}">
     <h3 in:fly={{y:200, delay:1000, duration: 2000}}>Skills</h3>
-    <p in:fly={{y:200, delay:1500, duration: 2000}}>I am a self taught developer and have experience using technologies including...</p>
+    <p in:fly={{y:200, delay:1500, duration: 2000}}>
+        I am a self taught developer and have experience using technologies including...
+    </p>
     <div in:fly={{y:200, delay:2000, duration: 2000}} class="skill-list">
         {#each skills as skill}
         <div class="skill">
