@@ -51,6 +51,8 @@
 
     }
     .project{
+        display: flex;
+        flex-direction: column;
 
     }
     .tech{
@@ -69,7 +71,6 @@
         {#each projects as project}
             <div class="project">
                 <h4>{project.name}</h4>
-                <p>{project.description}</p>
                 <div class="tech-list">
                     {#each project.tech as tech}
                         <div class="tech">
@@ -77,9 +78,12 @@
                         </div>
                     {/each}
                 </div>
+                <p>{project.description}</p>
                 <img src={project.img} alt={`${project.name} Image`}/>
-                <a target="_blank" href={project.url}><img src="/images/computer.svg" alt="Link to site"/></a>
-                <a target="_blank" href={project.source}><img src="/images/coding.svg" alt="Link to source code"/></a>
+                <div>
+                    <a target="_blank" href={project.url}><img src="/images/computer.svg" alt="Link to site"/></a>
+                    <a target="_blank" href={project.source}><img src="/images/coding.svg" alt="Link to source code"/></a>
+                </div>
             </div>
         {/each}
         <div>

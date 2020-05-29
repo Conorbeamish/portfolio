@@ -9,6 +9,7 @@
         align-items: center;
         font-size: 1.25rem;
         min-height: 80vh;
+        padding-top: 10vh;
     }
     .container{
         width: 80%;
