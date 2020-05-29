@@ -24,7 +24,6 @@ a:hover {
 	color: #24d6ee;
 }
 
-
 label {
 	display: block;
 }
@@ -37,6 +36,15 @@ input, button, select, textarea {
 	box-sizing: border-box;
 	border: 1px solid #ccc;
 	border-radius: 2px;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}
+
+a:focus {
+	color: #24d6ee;
+	outline: none;					
 }
 
 input:disabled {
@@ -62,5 +70,5 @@ button:not(:disabled):active {
 }
 
 button:focus {
-	border-color: #666;
+	border-color: #24d6ee;
 }

@@ -42,7 +42,7 @@
         letter-spacing: 0.01rem;
         border-bottom: 2px solid transparent;
     }
-    a {
+    .link {
         padding-bottom: 0.5rem;
     }
     :global(a.active) {
@@ -55,7 +55,7 @@
     <ul>
         {#each navItems as item}
             <li>
-                <a href={`/${item.name}`} use:link use:active={{path: `/${item.name}`, className: 'active'}}>{item.name}</a>
+                <a class="link" href={`/${item.name}`} use:link use:active={{path: `/${item.name}`, className: 'active'}}>{item.name}</a>
             </li>
         {/each}
     </ul>
