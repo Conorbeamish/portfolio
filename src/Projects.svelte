@@ -17,7 +17,7 @@
         source:"https://github.com/Conorbeamish/rekognition-app-server"
         },
         {name:"Quiz App",
-        description:"An applicaiton built with react that uses the Open Trivia DB API to generate trivia questions that uses can answers. The API is also controlled by a variety of parameters set by the user before the API call is made. This project is hosted on Herkou so please allow a moment for it to load.",
+        description:"An applicaiton built with react that uses the Open Trivia DB API to generate trivia questions that uses can answers. The API is also controlled by a variety of parameters set by the user before the API call is made.",
         tech:["React", "OpenTriviaDB API"],
         img:"/images/quiz-app.png",
         url: "https://cb-quiz-app.herokuapp.com/",
