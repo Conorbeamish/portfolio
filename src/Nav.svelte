@@ -19,6 +19,7 @@
         width: 100%;
         top:0;
         backdrop-filter: blur(2px);
+        z-index: 1;
     }
     h1{
         font-size: 1.5rem;
@@ -48,6 +49,8 @@
     :global(a.active) {
         border-bottom: 2px solid #24d6ee;
     }
+
+    
 </style>
 
 <nav>

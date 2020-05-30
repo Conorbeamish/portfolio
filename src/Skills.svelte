@@ -44,6 +44,11 @@
         margin-bottom: .5rem;
         font-size: 1.25rem;
     }
+    @media only screen and (min-width: 768px) {
+        section{
+            width: 60%;
+        }
+    }
 </style>
 
 <section  out:fly="{{y:200, duration:1000}}">

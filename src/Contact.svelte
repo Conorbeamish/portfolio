@@ -9,32 +9,40 @@
     let error = ""
     let loading = false
     let submited = false
+
     const handleSubmit = () => {
         loading = true
         error = ""
-        fetch("https://formspree.io/mbjzgbde", {
-            method: "POST",
-            headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
-        })
-        .then((res) => {
-            if (res.ok) {
-                return res.json()
-            } else {
-                throw Error("Please comlete all fields and enter a valid email address");
-            }
-        })
-        .then(() => {
-            submited = true;
+        const {email, name, subject, message} = formData
+        if(email=="" || name=="" || subject=="" || message==""){
+            error = "Please comlete all fields and enter a valid email address";
             loading = false;
-        })
-        .catch((err) => {
-            error = err;
-            loading = false;
-        })
+        } else {
+                fetch("https://formspree.io/mbjzgbde", {
+                method: "POST",
+                headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            },
+            body: JSON.stringify(formData),
+            })
+            .then((res) => {
+                if (res.ok) {
+                    return res.json()
+                } else {
+                    throw Error("Please comlete all fields and enter a valid email address");
+                }
+            })
+            .then(() => {
+                submited = true;
+                loading = false;
+            })
+            .catch((err) => {
+                error = err;
+                loading = false;
+            })
+        }   
+        
     }
 </script>
 
@@ -47,8 +55,10 @@
     }
     form{
         padding: 2rem;
-        width: 80%;
         background-color: #d3d3d3;
+        -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);  
+        -moz-box-shadow:    3px 3px 3px 3px rgba(0, 0, 0, 0.1); 
+        box-shadow:         3px 3px 3px 3px rgba(0, 0, 0, 0.1);  
     }
     div {
         position: relative;
@@ -84,6 +94,7 @@
     button{
         transition: .3s;
         border-radius: 0.25rem;
+        margin: 0;
     }
     button:hover{
         cursor: pointer;
@@ -91,6 +102,12 @@
     }
     .error {
         color: red;
+    }
+
+    @media only screen and (min-width: 768px) {
+        section{
+            width: 60%;
+        }
     }
 </style>
 
@@ -122,7 +139,7 @@
         {:else if loading}
             <p>Sending...</p>
         {:else if submited}
-            <p>Thank you {formData.name} for your message, I will try to respond as quickly as possible</p>
+            <p>Thank you {formData.name} for your message, I will try to respond as quickly as possible.</p>
         {/if}
     </form>
 </section>

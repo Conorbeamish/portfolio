@@ -23,6 +23,10 @@ a:hover {
 	text-decoration: none;
 	color: #24d6ee;
 }
+a:focus {
+	color: #24d6ee;
+	outline: none;					
+}
 
 label {
 	display: block;
@@ -40,11 +44,6 @@ input, button, select, textarea {
 
 input:focus, textarea:focus {
 	outline: none;
-}
-
-a:focus {
-	color: #24d6ee;
-	outline: none;					
 }
 
 input:disabled {
@@ -71,4 +70,8 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #24d6ee;
+}
+
+h3{
+	border-bottom: 1px solid #24d6ee;
 }

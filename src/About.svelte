@@ -4,18 +4,22 @@
 
 <style>
     section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 80%;
         font-size: 1.25rem;
         min-height: 80vh;
         padding-top: 10vh;
+        margin-left: auto;
+        margin-right: auto;
     }
     .container{
-        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-between
+    }
+    @media only screen and (min-width: 768px) {
+        section{
+            width: 60%;
+        }
     }
 </style>
 
