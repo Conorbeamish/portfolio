@@ -55,10 +55,11 @@
     }
     form{
         padding: 2rem;
+        border-radius: 0.25rem;
         background-color: #d3d3d3;
-        -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);  
-        -moz-box-shadow:    3px 3px 3px 3px rgba(0, 0, 0, 0.1); 
-        box-shadow:         3px 3px 3px 3px rgba(0, 0, 0, 0.1);  
+        -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);  
+        -moz-box-shadow:    0px 0px 3px 3px rgba(0, 0, 0, 0.1); 
+        box-shadow:         0px 0px 3px 3px rgba(0, 0, 0, 0.1);  
     }
     div {
         position: relative;

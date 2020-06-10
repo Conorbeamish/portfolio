@@ -5,7 +5,6 @@
 <style>
     section{
         width: 80%;
-        font-size: 1.25rem;
         min-height: 80vh;
         padding-top: 10vh;
         margin-left: auto;
@@ -19,6 +18,7 @@
     @media only screen and (min-width: 768px) {
         section{
             width: 60%;
+            font-size: 1.25rem;
         }
     }
 </style>

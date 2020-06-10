@@ -31,22 +31,18 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    
-    h3{
-        font-size: 1.5rem;
-    }
+
     p{
-        font-size: 1.25rem;
         margin-top: 0;
     }
     h4{
         text-align: center;
         margin-bottom: .5rem;
-        font-size: 1.25rem;
     }
     @media only screen and (min-width: 768px) {
         section{
             width: 60%;
+            font-size: 1.25rem;
         }
     }
 </style>

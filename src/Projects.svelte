@@ -48,9 +48,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    a:hover{
-        cursor: pointer;
-    }
+
     .project{
         display: flex;
         flex-direction: column;
@@ -58,40 +56,29 @@
         border-bottom: 2px solid #24d6ee;
         margin-bottom: 2rem;
     }
+    .link-container{
+        margin: 1rem auto 0 auto;
+    }
+    .project-link{
+        border: 2px solid #24d6ee;
+        padding: 0.25rem;
+        margin: 1rem;
+        transition: 0.3s ease all;
+    }
+    .project-link:hover{
+        cursor: pointer;
+        color: black;
+        background: #24d6ee;
+    }
     .project-img {
+        border: 1px solid rgba(0, 0, 0, 0.25);
         max-width: 100%;
         object-fit: contain;
         transition: 0.5s ease;
-    }
-    .img-container{
-        position: relative;
-        width: 100%;
-    }
-    .img-container:hover > .project-img {
-        opacity: 0.3;
-    }
-    .img-container:hover > .icon-container{
-        opacity: 1;
-    }
-    .icon-container{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: 0.5s ease;
-    }
-    .icon{
-        width: 10vw;
-        margin: 0 2rem 0 2rem;
-    }
-    .icon:focus{
-        border: 1px solid #24d6ee;
+        margin-bottom: 1rem;
     }
     .tech-list{
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 1rem auto;
     }
     .tech{
         display: inline;
@@ -100,13 +87,13 @@
     .tech:not(:last-child){
         border-right: 2px solid #24d6ee;
     }
+    h4 {
+        margin-bottom: 0;
+    }
 
     @media only screen and (min-width: 768px) {
         section{
             width: 60%;
-        }
-        .icon{
-            width: 5vw;
         }
     }
 </style>
@@ -118,20 +105,18 @@
         {#each projects as project}
             <div class="project">
                 <h4>{project.name}</h4>
+                <p>{project.description}</p>
                 <div class="tech-list">
                     {#each project.tech as tech}
                         <div class="tech">
                         {tech}
                         </div>
                     {/each}
-                </div>
-                <p>{project.description}</p>
-                <div class="img-container">
-                    <img class="project-img" src={project.img} alt={`${project.name} Image`}/>
-                    <div class="icon-container">
-                        <a target="_blank" href={project.url}><img class="icon" src="/images/computer.svg" alt="Link to site"/></a>
-                        <a target="_blank" href={project.source}><img class="icon" src="/images/coding.svg" alt="Link to source code"/></a>
-                    </div>
+                </div> 
+                <img class="project-img" src={project.img} alt={`${project.name} Image`}/>
+                <div class="link-container">
+                    <a class="project-link" target="_blank" href={project.url}>View Site</a>
+                    <a class="project-link" target="_blank" href={project.source}>View Code</a>
                 </div>
             </div>
         {/each}

@@ -73,6 +73,10 @@ button:focus {
 	border-color: #24d6ee;
 }
 
+h1, h2, h3, h4 {
+	font-family: 'Open Sans', sans-serif;
+}
+
 h3{
 	border-bottom: 1px solid #24d6ee;
 }
