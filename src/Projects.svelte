@@ -100,7 +100,7 @@
 
 <section in:fade="{{delay: 1000, duration:1000}}" out:fly="{{y:200, duration:1000}}">
     <h3>My Work</h3>
-    <p>Bellow is a section of the projects I have worked on, some ongoing projects and more can be found <a href="https://github.com/Conorbeamish"><span>here</span></a>. You can see the working sites and view the code by hovering over the images below.</p> 
+    <p>Bellow is a section of the projects I have worked on, some ongoing projects and more can be found <a href="https://github.com/Conorbeamish"><span>on github</span></a>.</p> 
     <div class="project-container">
         {#each projects as project}
             <div class="project">
