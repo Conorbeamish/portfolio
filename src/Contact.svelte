@@ -142,7 +142,7 @@
     <p>Or if you want to get in contact please complete the form below...</p>
     <form 
         on:submit|preventDefault={handleSubmit} 
-    >   
+    >
         {#if !submited && !loading}
             <div>
                 <input type="text" name="name" autocomplete="off"  bind:value={formData.name}>
