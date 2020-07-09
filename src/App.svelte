@@ -6,7 +6,6 @@
 	import Skills from "./Skills.svelte";
 	import Projects from "./Projects.svelte";
 	import Contact from "./Contact.svelte";
-	import Footer from "./Footer.svelte";
 
 	const routes = {
 		"/": Landing,
@@ -19,5 +18,3 @@
 
 <Nav />
 <Router {routes}/>
-
-<!-- <Footer/> -->
