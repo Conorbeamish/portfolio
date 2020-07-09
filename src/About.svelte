@@ -18,7 +18,6 @@
     @media only screen and (min-width: 768px) {
         section{
             width: 60%;
-            font-size: 1.25rem;
         }
     }
 </style>

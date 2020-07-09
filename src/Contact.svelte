@@ -30,7 +30,7 @@
                 if (res.ok) {
                     return res.json()
                 } else {
-                    throw Error("Please comlete all fields and enter a valid email address");
+                    throw Error("Please complete all fields and enter a valid email address");
                 }
             })
             .then(() => {
@@ -54,12 +54,10 @@
         margin-right: auto;
     }
     form{
-        padding: 2rem;
+        padding: 1rem;
         border-radius: 0.25rem;
-        background-color: #d3d3d3;
-        -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);  
-        -moz-box-shadow:    0px 0px 3px 3px rgba(0, 0, 0, 0.1); 
-        box-shadow:         0px 0px 3px 3px rgba(0, 0, 0, 0.1);  
+        background-color: #616161;    
+        margin-bottom: 1rem;
     }
     div {
         position: relative;
@@ -71,7 +69,7 @@
         top: 0;
         pointer-events: none;
         transition: 0.2s ease all;
-        color: #a9a9a9;
+        color: #616161;
     }
     input{
         padding-top: 1rem;
@@ -85,7 +83,7 @@
     textarea{
         padding-top: 1rem;
         width: 100%;
-        height: 40vh;
+        height: 30vh;
         border-radius: 0.25rem;
     }
     textarea:focus ~ label {
@@ -95,26 +93,53 @@
     button{
         transition: .3s;
         border-radius: 0.25rem;
-        margin: 0;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        background-color: white;
     }
     button:hover{
         cursor: pointer;
         background-color: #24d6ee;
     }
-    .error {
-        color: red;
+    img{
+        height: 3rem;
     }
-
+    img:hover{
+        filter: invert(79%) sepia(73%) saturate(1942%) hue-rotate(148deg) brightness(92%) contrast(103%);
+        -webkit-filter: invert(79%) sepia(73%) saturate(1942%) hue-rotate(148deg) brightness(92%) contrast(103%);
+    }
+    .social-container{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .error {
+        margin-top: 0.5rem;
+        color: #ff5151;
+    }
+    
     @media only screen and (min-width: 768px) {
         section{
             width: 60%;
+        }
+        form{
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 </style>
 
 <section in:fade="{{delay: 1000, duration:1000}}" out:fly="{{y:200, duration:1000}}">
     <h3>Contact</h3>
-    <p>If you want to get in contact please complete the form below...</p>
+    <p>You can find me on...</p>
+    <div class="social-container">
+        <a href="https://github.com/Conorbeamish" target="_blank"><img src="/images/github.png"></a>
+        <a href="https://www.linkedin.com/in/conor-beamish-81b512192/?originalSubdomain=uk" target="_blank"><img src="/images/linkedin.png"></a>
+    </div>
+    <p>Or if you want to get in contact please complete the form below...</p>
     <form 
         on:submit|preventDefault={handleSubmit} 
     >   

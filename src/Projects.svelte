@@ -3,7 +3,7 @@
 
     let projects = [
         {name: "Dungeons and Dragons Encounter",
-        description:"This full stack applicaion is to help players of Dungeons and Dragons organise monster encounters. It uses the Open5e API allowing users to search for monsters and items and save them to encounters which they can quickly access during gameplay to see particluar stats and abilities. It is built using React and Redux with an Express server and MongoDB/Mongoose for storing user data/encounters.",
+        description:"This full stack applicaion is to help players of Dungeons and Dragons organise monster encounters. It uses the Open5e API allowing users to search for monsters and items and save them to encounters which they can quickly access during gameplay to see particluar stats and abilities.",
         img: "/images/dnd-encounter.png",
         tech:["React", "Redux", "Node/Express", "MongoDB"],
         url:"https://cb-dndencounter-client.herokuapp.com/",
@@ -90,6 +90,9 @@
     h4 {
         margin-bottom: 0;
     }
+    span{
+        font-weight: bold;
+    }
 
     @media only screen and (min-width: 768px) {
         section{
@@ -100,7 +103,7 @@
 
 <section in:fade="{{delay: 1000, duration:1000}}" out:fly="{{y:200, duration:1000}}">
     <h3>My Work</h3>
-    <p>Bellow is a section of the projects I have worked on, some ongoing projects and more can be found <a href="https://github.com/Conorbeamish"><span>on github</span></a>.</p> 
+    <p>Bellow is a section of the projects I have worked on, some ongoing projects and more can be found <a href="https://github.com/Conorbeamish"><span>here</span></a> on github.</p> 
     <div class="project-container">
         {#each projects as project}
             <div class="project">

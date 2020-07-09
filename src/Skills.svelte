@@ -42,16 +42,23 @@
     @media only screen and (min-width: 768px) {
         section{
             width: 60%;
-            font-size: 1.25rem;
         }
     }
 </style>
 
 <section  out:fly="{{y:200, duration:1000}}">
     <h3 in:fly={{y:200, delay:1000, duration: 2000}}>Skills</h3>
-    <p in:fly={{y:200, delay:1500, duration: 2000}}>
-        I am a self taught developer and have experience using technologies including...
+    <div in:fly={{y:200, delay:1500, duration: 2000}}>
+    <p>
+        I am a self taught developer with experience creating full stack applications using a range of tools and modern technologies.
     </p>
+    <p>
+        I enjoy making fast, responsive applications that have intuitive design and good UX/UI.
+    </p>
+    <p>
+        See some of the languages and technologies I am profficient in below...
+    </p>
+    </div>
     <div in:fly={{y:200, delay:2000, duration: 2000}} class="skill-list">
         {#each skills as skill}
         <div class="skill">

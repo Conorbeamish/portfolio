@@ -45,6 +45,7 @@
     }
     .link {
         padding-bottom: 0.5rem;
+        letter-spacing: 0.05rem;
     }
     :global(a.active) {
         border-bottom: 2px solid #24d6ee;

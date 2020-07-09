@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-	color: #333;
+	color: #616161;
 	margin: 0;
 	padding: 0px;
 	box-sizing: border-box;
@@ -79,4 +79,5 @@ h1, h2, h3, h4 {
 
 h3{
 	border-bottom: 1px solid #24d6ee;
+	letter-spacing: 0.05rem;
 }
