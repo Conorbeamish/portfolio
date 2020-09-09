@@ -16,12 +16,26 @@
         url:"https://cb-image-analyser.herokuapp.com/",
         source:"https://github.com/Conorbeamish/rekognition-app-server"
         },
+        {name:"Repair Service Install",
+        description:"A comercial project built with bootstrap and jQuerry, this is a static single page application which uses Formspree to send form submissions",
+        tech: ["Bootsrap", "jQuerry"],
+        img:"/images/repair-service-install.png",
+        url:"http://repairserviceinstall.co.uk/",
+        source:"https://github.com/Conorbeamish/repair-service-action"
+        },
         {name:"Quiz App",
         description:"An applicaiton built with react that uses the Open Trivia DB API to generate trivia questions that uses can answers. The API is also controlled by a variety of parameters set by the user before the API call is made.",
         tech:["React", "OpenTriviaDB API"],
         img:"/images/quiz-app.png",
         url: "https://cb-quiz-app.herokuapp.com/",
         source: "https://github.com/Conorbeamish/quiz-app"
+        },
+        {name:"PM Mechanical Solutions",
+        description:"This project is a comercial project for a client built with Bootsrap and jQuerry, it is a static single page application",
+        tech: ["Bootsrap", "jQuerry"],
+        img:"/images/pm-mechanical-solutions.png",
+        url:"https://pmmechanicalsolutions.co.uk/",
+        source:"https://github.com/Conorbeamish/pm-mechanical-solutions"
         },
         {name:"Fallout Minigame",
         description:"A clone of the fallout hacking terminal game, made with vanilla Javascript, CSS and HTML. This is a simple responsive application built with accesibility in mind.",
